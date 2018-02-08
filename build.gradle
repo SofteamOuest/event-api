@@ -22,16 +22,6 @@ repositories {
     mavenCentral()
 }
 
-/*sourceSets {
-    main {
-        resources {
-            srcDirs "src/main/resources", "src/main/configs"
-        }
-    }
-}*/
-
-
-
 ext {
     springCloudVersion = 'Edgware.SR1'
 }
@@ -42,8 +32,6 @@ dependencies {
     compile('org.springframework.boot:spring-boot-starter-web')
     compile('org.springframework.boot:spring-boot-starter-security')
     compile('org.springframework.security.oauth:spring-security-oauth2')
-
-    //testCompile('org.springframework.boot:spring-boot-starter-test')
 }
 
 dependencyManagement {
