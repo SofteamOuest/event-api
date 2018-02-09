@@ -21,10 +21,8 @@ public class OAuth2AuthenticationConfiguration extends ResourceServerConfigurerA
 
     @Override
     public void configure(HttpSecurity http) throws Exception {
-        http
-                .requestMatcher(resources())
+        http.requestMatcher(resources())
                 .authorizeRequests()
                 .anyRequest().authenticated();
     }
-
 }

@@ -1,8 +1,7 @@
 package com.meltingpoc.events.resources;
 
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RestController;
+import com.meltingpoc.events.resources.dto.EventDto;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.Arrays;
 import java.util.Collection;
@@ -14,6 +13,15 @@ public class EventResource {
     @GetMapping
     public Collection<EventDto> events() {
 
-        return Arrays.asList(new EventDto(1));
+           /* {
+        "id": 3,
+            "title": "",
+            "composer": "",
+            "status": "canceled",
+            "url": "http://"
+    }*/
+
+        return Arrays.asList(new EventDto(1, "12@13 Green IT et Eco-conception des logiciels",
+                "Ashoka Tano", "canceled", "http://"));
     }
 }
