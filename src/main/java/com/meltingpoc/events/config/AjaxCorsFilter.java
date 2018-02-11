@@ -24,9 +24,6 @@ public class AjaxCorsFilter extends CorsFilter {
         // origins
         config.addAllowedOrigin("*");
 
-        // when using ajax: withCredentials: true, we require exact origin match
-        //config.setAllowCredentials(true);
-
         // headers
         config.addAllowedHeader("access-control-allow-origin");
         config.addAllowedHeader("authorization");
